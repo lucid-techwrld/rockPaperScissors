@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 
   <title>HTML</title>
   
@@ -15,8 +15,28 @@
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
+  <h1 class="name">ROCK PAPER SCISSORS GAME</h1>
   <!-- Project -->
+  <div class="gameContainer">
+    <button class="rock btn" id="rock"><img src="rock.jpeg" alt="rock.jpeg"></button>
+    <button class="paper btn" id="paper"><img src="paper.jpeg" alt="paper.jpeg"></button>
+    <button class="scissors btn" id="scissors"><img src="scissors.jpeg" alt="scissors.jpeg"></button>
+  </div>
+  
+  <div class="rules">
+    <h1>Rules</h1>
+    <p>Scissors beats paper</p>
+    <p>Paper beats rock</p>
+    <p>Rock beats Scissors</p>
+  </div>
+  
+  <div class="scoreBox">
+    <h1>Computer: <span id="compScore">0</span></h1>
+    <h1>You: <span id="youScore">0</span></h1>
+    <h1>Tie: <span id="tie">0</span></h1>
+  </div>
+  
+  <button class="resetScore" id="resetScore">Reset Score</button>
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,4 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
     font-size: 15pt;
-    background: black;
+    background: #5DFDCB;
+    margin: 5px;
+    padding: 0;
+}
+
+.name{ 
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  position: relative;
+  margin-left: 10px
+}
+
+.name::before {
+  content: '';
+  width: 5px;
+  height: 80%;
+  left: 0;
+  position: absolute;
+  background-color: #fff;
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  gap: 10px;
+  padding: 10px;
+  background: #90D7FF;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  transition: transform.3s ease;
+}
+
+.btn:hover{ 
+  transform: scale(1.2);
+}
+
+.rock img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: block;
+  border-radius: 10px;
+}
+
+.paper img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.scissors img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.rules {
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+}
+.rules h1 {
+  color: #90D7FF;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.rules p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.scoreBox {
+  background-color: #C9F9FF;
+  width: 100%;
+  height: 150px;
+  padding-top: 20px;
+}
+
+.scoreBox h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+
+.scoreBox h1 span {
+  color: #fff;
+}
+
+.resetScore {
+  width: 100%;
+  height: 50px;
+  background-color: #90D7FF;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px; 
+  border-radius: 20px;
+  border: 2px solid #fff;
 }
